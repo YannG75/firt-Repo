@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins-Regular";
+}
+@font-face {
+    src: url('../../../assets/police/Poppins/Poppins-Regular.ttf');
+    font-family: "Poppins-Regular";
+}
+main{
+    background: linear-gradient(135deg, rgba(139, 59, 157, 1) 0%, rgba(107, 146, 217, 1));
+    width: 100vw;
+    min-height: 600vh;
+}
+section{
+    width: 100vw;
+    min-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: white;
+    text-decoration:none;
+}
+ul{
+    padding: 0;
+}
+li{
+    display:inline-block;
+    padding: 0 15px;
+    color: white;
+}
+#logo{
+    width: 5%;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+.joinUs{
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid white;
+    transition-duration: 500ms;
+    background-color: white;
+}
+
+.joinUs > a{
+    color: rgba(139, 59, 157, 1);
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+#title > h1{
+    font-size: 50px;
+}
+h1, #h3{
+    color: white;
+}
+
+#arrow > a {
+    color: white;
+}
+.margin{
+    width: 70%;
+    margin: auto;
+}
+.backgound{
+    background-color: white;
+    border-radius: 5px;
+    padding: 55px;
+}
+.container{
+    display: flex;
+    align-content: center;
+}
+.secondColor{
+    color: rgba(107, 146, 217, 1);
+}
+p{
+    color: gray;
+}
+.backgound >h3{
+    padding-bottom: 25px;
+}
+.firstColor{
+    color: rgba(139, 59, 157, 1);
+    text-align: center;
+}
+#text{
+    display: flex;
+}
+.infos{
+    padding-right: 35px;
+    width: 50%;
+}
+.right{
+    padding-right: 35px;
+}
+.center{
+    text-align: center;
+}
+.centerParagraph{
+    width: 70%;
+    margin: auto;
+}
+.paddingTop{
+    padding-top: 20px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.flex > div > img{
+    width: 100%;
+}
+.background {
+    padding: 55px;
+    background-color: white;
+    border-radius: 5px;
+}
+.background > div > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.background img{
+    margin: 20px 0 80px 0;
+    width: 40%;
+}
+.titleBlue{
+    color: rgba(107, 146, 217, 1);
+}
+.titlePurple{
+    color: rgba(139, 59, 157, 1);
+}
+#lastSection{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.last{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+.last > div{
+    width: 220px;
+    margin: 10px;
+    color: white;
+}
+.last > div > img{
+    width: 100%;
+    max-height: 300px;
+}
+.last > div > p{
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+#arrow{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 35px;
+    animation: animationArrow 1.5s infinite alternate;
+}
+@keyframes animationArrow {
+    0%{
+        top:-80px;
+    }
+    100%{
+        top: 0;
+    }
+}
+@media all and (max-width: 736px) {
+    #text{
+        flex-direction: column;
+    }
+    .right{
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+    .infos{
+        width: 100%;
+    }
+    .centerParagraph{
+        width: 100%;
+    }
+    #picture{
+        display: none;
+    }
+}
+@media all and (max-width: 680px) {
+    #title > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    #h3{
+        font-size: 20px;
+    }
+    li{
+        padding: 0 7px;
+        font-size: 12px;
+    }
+    #logo{
+        width: 10%;
+    }
+    .background{
+        padding: 15px;
+    }
+}
+@media all and (max-width: 475px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav{
+        justify-content: center;
+    }
+    ul{
+        width: 32%;
+        text-align: center;
+    }
+    li{
+        font-size: 15px;
+    }
+    .barre{
+        display: none;
+    }
+}
